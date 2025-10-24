@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hr-leave-management-mcp-server"
+version = "1.0.0"
+description = "HR Leave Management MCP Server for calculating and managing employee leave"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "mypy>=1.0"
+]
+
+[project.scripts]
+hr-leave-server = "mcp_leave_server.main:main"
+
+[tool.setuptools.packages.find]
+include = ["mcp_leave_server*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']

@@ -1,0 +1,156 @@
+# My First MCP Server
+
+A comprehensive Model Context Protocol (MCP) server implementation for employee leave management.
+
+## 📁 Project Structure
+
+This repository contains two MCP server implementations:
+
+### 1. `mcp-employee-leave/` - Complete Employee Leave Management System
+- **Purpose**: Full-featured HR leave management server
+- **Features**: 
+  - Employee information management
+  - Leave balance calculations
+  - Leave request approval workflow
+  - Working days calculator
+  - Pending requests tracking
+
+### 2. `mcp_leave_server/` - Alternative Implementation
+- **Purpose**: Alternative server structure with database integration
+- **Features**: Database models and schemas for leave management
+
+## 🌟 Main Features
+
+### Employee Leave Management (`mcp-employee-leave/`)
+- ✅ **7 MCP Tools**: Complete set of leave management tools
+- ✅ **1 Resource**: Employee data access
+- ✅ **Claude Desktop Integration**: Ready-to-use configuration
+- ✅ **Sample Data**: 5 employees, 6 leave requests (3 pending)
+- ✅ **Working Server**: All connection issues resolved
+
+#### Available Tools:
+1. `check_leave_balance` - Check employee leave balances
+2. `get_employee_info` - View employee details
+3. `list_employees` - List all employees
+4. `get_leave_requests` - View leave request history
+5. `approve_leave_request` - Approve/reject requests
+6. `calculate_working_days` - Calculate business days
+7. `get_pending_requests` - View pending approvals
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.8+
+- Virtual environment
+- Claude Desktop (for integration)
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/suchitad1950/My-first-MCP-server.git
+   cd My-first-MCP-server
+   ```
+
+2. **Set up virtual environment**:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   cd mcp-employee-leave
+   pip install -r requirements.txt
+   ```
+
+4. **Test the server**:
+   ```bash
+   python3 server.py
+   ```
+
+### Claude Desktop Integration
+
+1. **Copy configuration**:
+   ```bash
+   cp mcp-employee-leave/claude_desktop_config_final.json ~/Library/Application\ Support/Claude/claude_desktop_config.json
+   ```
+
+2. **Restart Claude Desktop**
+
+3. **Test in Claude**:
+   - "List all employees"
+   - "Show me pending leave requests"
+   - "Check EMP001's annual leave balance"
+
+## 📊 Sample Data
+
+The server comes with realistic sample data:
+
+### Employees (5):
+- **EMP001**: John Smith (Engineering) - 25 annual, 10 sick days
+- **EMP002**: Sarah Johnson (Marketing) - 28 annual, 12 sick days  
+- **EMP003**: Mike Wilson (HR) - 30 annual, 15 sick days
+- **EMP004**: Emily Davis (Finance) - 22 annual, 10 sick days
+- **EMP005**: David Brown (Sales) - 25 annual, 12 sick days
+
+### Leave Requests (6):
+- **3 Approved**: John's vacation & sick leave, Emily's medical leave
+- **3 Pending**: Sarah's holiday, Mike's personal day, David's Thanksgiving
+
+## 🛠️ Development
+
+### File Structure
+```
+mcp-employee-leave/
+├── server.py              # Main MCP server (WORKING VERSION)
+├── employee_data.json     # Sample employee data
+├── requirements.txt       # Python dependencies
+├── README.md             # Detailed documentation
+├── test_tools.py         # Testing script
+└── mcp_server.log        # Server logs
+```
+
+### Key Components
+- **EmployeeLeaveManager**: Core business logic
+- **MCP Tools**: 7 interactive tools for Claude Desktop
+- **Data Models**: Pydantic models for validation
+- **Error Handling**: Comprehensive logging and debugging
+
+## 🔧 Configuration Files
+
+- `claude_desktop_config_final.json` - Working Claude Desktop configuration
+- `mcp_config.yaml` - Alternative MCP configuration format
+- `requirements.txt` - Python package dependencies
+
+## 📈 Version History
+
+- **v1.0.0** (Current): Complete working MCP server with Claude Desktop integration
+- All connection issues resolved
+- Comprehensive testing completed
+- Full documentation provided
+
+## 🤝 Contributing
+
+This is a learning project demonstrating MCP server implementation. Feel free to:
+- Fork the repository
+- Submit issues
+- Suggest improvements
+- Add new features
+
+## 📄 License
+
+This project is for educational purposes. Feel free to use and modify as needed.
+
+## 🎯 Next Steps
+
+- [ ] Add database persistence
+- [ ] Implement authentication
+- [ ] Add email notifications
+- [ ] Create web dashboard
+- [ ] Add more leave types
+
+---
+
+**Created as part of learning Model Context Protocol (MCP) development** 🚀
+

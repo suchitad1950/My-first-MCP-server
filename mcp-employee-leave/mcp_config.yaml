@@ -1,0 +1,36 @@
+mcpServers:
+  employee-leave:
+    command: python3
+    args:
+      - "/Users/suchitaninawe/Desktop/python  folder/MY FIRST MCP SERVER/mcp-employee-leave/server.py"
+    env:
+      PYTHONPATH: "/Users/suchitaninawe/Desktop/python  folder/MY FIRST MCP SERVER/venv/lib/python3.13/site-packages"
+    description: "Employee Leave Management MCP Server"
+    capabilities:
+      - tools
+      - resources
+    
+# Alternative configuration for different setups:
+# 
+# For uv-based setup:
+# mcpServers:
+#   employee-leave:
+#     command: uv
+#     args:
+#       - "run"
+#       - "--directory"
+#       - "/Users/suchitaninawe/Desktop/python  folder/MY FIRST MCP SERVER/mcp-employee-leave"
+#       - "python"
+#       - "server.py"
+#     description: "Employee Leave Management MCP Server"
+
+# For pip-installed package:
+# mcpServers:
+#   employee-leave:
+#     command: python3
+#     args:
+#       - "-m"
+#       - "mcp_employee_leave.server"
+#     env:
+#       VIRTUAL_ENV: "/Users/suchitaninawe/Desktop/python  folder/MY FIRST MCP SERVER/venv"
+#     description: "Employee Leave Management MCP Server"
