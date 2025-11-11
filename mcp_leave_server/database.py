@@ -15,8 +15,8 @@ class LeaveDatabase:
         employees = [
             Employee(
                 employee_id="EMP001",
-                name="John Smith",
-                email="john.smith@company.com",
+                name="Sachin Goswami",
+                email="Sachin.goswami@company.com",
                 department="Engineering",
                 hire_date=date(2022, 1, 15),
                 annual_leave_entitlement=25,
@@ -24,8 +24,8 @@ class LeaveDatabase:
             ),
             Employee(
                 employee_id="EMP002",
-                name="Sarah Johnson",
-                email="sarah.johnson@company.com",
+                name="Ravi Punekar",
+                email="Ravi.punekar@company.com",
                 department="Marketing",
                 hire_date=date(2021, 3, 10),
                 annual_leave_entitlement=28,
@@ -33,8 +33,8 @@ class LeaveDatabase:
             ),
             Employee(
                 employee_id="EMP003",
-                name="Mike Wilson",
-                email="mike.wilson@company.com",
+                name="Rahul Deshpande",
+                email="Rahul.deshpande@company.com",
                 department="HR",
                 hire_date=date(2020, 6, 5),
                 annual_leave_entitlement=30,
@@ -42,13 +42,27 @@ class LeaveDatabase:
             ),
             Employee(
                 employee_id="EMP004",
-                name="Emily Davis",
-                email="emily.davis@company.com",
+                name="Archana Jadhav",
+                email="Archana.jadhav@company.com",
                 department="Finance",
                 hire_date=date(2023, 2, 20),
                 annual_leave_entitlement=22,
                 sick_leave_entitlement=10
+            ),
+            Employee(
+                employee_id= "EMP005",
+                name= "Preeti Kulkarni",
+                email= "Preeti.kulkarni@company.com",
+                department="Sales",
+                hire_date= "2021-09-12",
+                annual_leave_entitlement= 25,
+                sick_leave_entitlement= 12
             )
+            
+           
+            
+      
+    
         ]
         
         for emp in employees:

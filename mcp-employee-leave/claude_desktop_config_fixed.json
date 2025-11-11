@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "employee-leave": {
+      "command": "/Users/suchitaninawe/Desktop/python  folder/MY FIRST MCP SERVER/venv/bin/python",
+      "args": [
+        "/Users/suchitaninawe/Desktop/python  folder/MY FIRST MCP SERVER/mcp-employee-leave/server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/suchitaninawe/Desktop/python  folder/MY FIRST MCP SERVER/venv/lib/python3.13/site-packages"
+      }
+    }
+  }
+}
